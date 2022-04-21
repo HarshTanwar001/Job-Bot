@@ -1,0 +1,277 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Personal" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1130.4,2820" sap2010:WorkflowViewState.IdRef="Personal_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="88">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Personal" sap:VirtualizedContainerService.HintSize="564,2755.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="occupation" />
+      <Variable x:TypeArguments="x:String" Name="address" />
+      <Variable x:TypeArguments="sd:DataTable" Name="data_table" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Employment Info Generator | Fake Person Generator" sap:VirtualizedContainerService.HintSize="522.4,666.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="046db1b4-1c09-4898-9c4e-001625db9ee8" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,449.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Occupation(Job Title)'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="046db1b4-1c09-4898-9c4e-001625db9ee8" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakepersongenerator.com/employment-generator?new=refresh" DesignTimeRectangle="980, 599, 599, 43" ElementType="InputBox" FriendlyName="'Cutting and'" FullSelectorArgument="&lt;webctrl idx='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' aaname='' /&gt;" Guid="0a7ed24f-b3ee-44bc-9d31-1a2f024d3474" InformativeScreenshot="64b9c7c44dfe07a4f66db8f1dd49518e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Employment Info Generator | Fake Person Generator' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="705, 611, 165, 20" ElementType="Text" FriendlyName="'Occupation(Job Title)'" FullSelectorArgument="&lt;webctrl aaname='Occupation(Job Title)' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Occupation(Job Title)' tag='SPAN' type='' check:text='Occupation(Job Title)' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[occupation]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Address'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="046db1b4-1c09-4898-9c4e-001625db9ee8" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakepersongenerator.com/employment-generator?new=refresh" DesignTimeRectangle="980, 869, 599, 43" ElementType="InputBox" FriendlyName="'Camden, New Jersey, US'" FullSelectorArgument="&lt;webctrl idx='10' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' aaname='' /&gt;" Guid="f9668bf3-9c9a-4c51-9fad-2a7c7bfde158" InformativeScreenshot="2be3fc86dfa87b7a59051f0dd6824d47.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Employment Info Generator | Fake Person Generator' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="705, 881, 64, 20" ElementType="Text" FriendlyName="'Address'" FullSelectorArgument="&lt;webctrl aaname='Address' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Address' tag='SPAN' type='' check:text='Address' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAYCAYAAABDX1s+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAP/SURBVFhH7Vdda9swFN1PD8EUU0wxw5QwzKgLDutoYA5zWCEuzGMpSWkeMtZBxlJGGGHkIQ9+MKWUs3slOZEVp9lexhg+EFZJ1/o4Ovfo7hlqlFATYqAmxEBNiIGaEAM1IQaeIGSJxGug0WjA6y9V3+9ggdil707Hqr0LYwQ0t9tbqPa/gd2ELBN4DQu2TYdzIsxU9378p4TMug6pw0fy3qd/LZx9UgN78V8SMkN0SIc6TrDKB/Cb9PfLAXI1qmN5HcI7oHE6XMMhAufzCkIyTHs+HEvGWc87mGQGITcBjbmIry/gcVzTgtOdyrH7BUZtDxbvg9c58BD0pzSrhmyK+KWjxTjwe7dYPapxxs8RQs9ex1i2h3C4wIMaZlQT8ukMFn3gXa5Ec3zKE3hIDCtZXnpycTdEMhwhOfdgH7pwmUyNkNvXtoizX0RIhyniU5dIoTjqKxNC3zVttLopRv0IyVfqzycIeb6mi6BH/ep7MR+tIUlRquQDFjEnrPAGkaqSPacL4Is7aiHqjygmQYfI4Rj/anPVlYRIAnwMiji12ZK5Pk5wxgs8jzHXbiG7DgSZa0KEF+mbl5i/lYcyCbHPlSoUROo2faTybtbIPnIqO4juqPEjFuQG13JMIkP6glTgXWDOTTG/g1g0FB6n6BDZVnu8Vsk2IVUpUhxeN9dvEWzahP/RTCSVboqQXGzcRvRNNDfgdSoICW5kU4LS74jmOgpJWXyr2q8fiPXF98WeOe7rErmeJgXuIjgUzyodf89KaaJji5BlX6aBLiPG5JVF/Zq5igNUHBQrJMcbQhY9VoKmtjVuBclPEyJ9hvt3/toTETm/bMEu/IP8x/YCxMOZ5iEZJudSlUWM0+og+fykh2xqj52/Qjk7Cckx8CluLyFSSb9FSJF++3C/wnQYI2xp5mqkNPI5bsmffM1c9XQuE6Jk1WhFZXmKX4LQ4QmUuf6VlFFzHf5JHaTwmJP/8GWQqj+rPhNE4OCElU9nUh5VImT2hl13d81RpJN0bjIkLtpcw1TpYEzU+lZXKVp0E9bJqGyqQjn7CKE9iXrIIsMsPbLSvEn2wRX5wU0I27K39p19aMnzECHzd/xsb7+U03M+cxUhVcZpojCvgzNMiIT14V3K1w8jpF0tjzWZF4e3jylnSW1Je5PL+wgB1ytMPMe2E1IqPalUk4h1inTgp5lj6Gn2uxxDa9BeHBFzQY8y4ccFXG4fak8zz8P7Ih8qdL4mJL9iae//f4tprqsvMXyH+2gxi4uhFJ2twuwBi6FWwFFhFVIBtl2YVRDCoKIrOdUKM1KD1x5hca/GGasJIt07SD1mzMNdikDzDrnfcvFmmGqNmhADNSEGakIM1ISUAPwCYUus7+TlI+wAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[address]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="398884bf3c40c0737e69d11708a64ca1.png" Selector="&lt;html app='chrome.exe' title='Employment Info Generator | Fake Person Generator'/&gt;" Url="https://www.fakepersongenerator.com/employment-generator?new=refresh" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="522.4,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[address]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[address.Trim]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[occupation]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[occupation.Trim.Split(","c)(0)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <ui:BuildDataTable DataTable="[data_table]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="522.4,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Title&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Schedule&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Qualifications&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Responsibilities&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Experience&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Compensation&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Benefits&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Employment_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Seniority_Level&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Pay_Range&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Requirements&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Extract_Data_Linkedin workflow" sap:VirtualizedContainerService.HintSize="522.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Extract_Data_Linkedin.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="occupation">[occupation]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="address">[address]</InArgument>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InOutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="522.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Extract_Data_Indeed.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="occupation">[occupation]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="address">[address]</InArgument>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InOutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="522.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Extract_Data_Glassdoor.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="occupation">[occupation]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="address">[address]</InArgument>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InOutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="522.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Extract_Data_Monster.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="occupation">[occupation]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="address">[address]</InArgument>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InOutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="522.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Extract_Data_SimplyHired.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="occupation">[occupation]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="address">[address]</InArgument>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="522.4,916" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+      <ui:IfElseIf.ConditionBlocks>
+        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+          <ui:IfElseIfBlock BlockType="If" Condition="[data_table.Rows.Count &gt; 0]">
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="472,720.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="file_name" />
+                  <Variable x:TypeArguments="s:String[]" Name="files_data" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                  <ui:MultipleAssign.AssignOperations>
+                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[file_name]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">Employment.xlsx</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="s:String[]">[files_data]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="s:String[]">[{"Employment.xlsx"}]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                    </scg:List>
+                  </ui:MultipleAssign.AssignOperations>
+                </ui:MultipleAssign>
+                <ui:WriteRange AddHeaders="True" DataTable="[data_table]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="430.4,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="[file_name]" />
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="430.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Data_Filtering.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="file_name">[file_name]</InArgument>
+                    <InOutArgument x:TypeArguments="s:String[]" x:Key="files_data">[files_data]</InOutArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+                <ui:SendMail Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" AttachmentsCollection="[files_data]" DisplayName="Send SMTP Mail Message" EnableSSL="True" sap:VirtualizedContainerService.HintSize="430.4,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Port="587" SecureConnection="Auto" Server="smtp.office365.com" Subject="Job Data">
+                  <ui:SendMail.Email>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ui:SendMail.Email>
+                  <ui:SendMail.Files>
+                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
+                  </ui:SendMail.Files>
+                  <ui:SendMail.Password>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ui:SendMail.Password>
+                  <ui:SendMail.To>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ui:SendMail.To>
+                </ui:SendMail>
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+        </sc:BindingList>
+      </ui:IfElseIf.ConditionBlocks>
+    </ui:IfElseIf>
+  </Sequence>
+</Activity>
