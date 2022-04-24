@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Personal" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1130.4,2820" sap2010:WorkflowViewState.IdRef="Personal_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Personal" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="839.2,3332.8" sap2010:WorkflowViewState.IdRef="Personal_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="88">
+    <scg:List x:TypeArguments="x:String" Capacity="47">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -51,7 +51,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -84,9 +84,11 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Personal" sap:VirtualizedContainerService.HintSize="564,2755.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Personal" sap:VirtualizedContainerService.HintSize="570.4,3268" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="occupation" />
       <Variable x:TypeArguments="x:String" Name="address" />
@@ -97,7 +99,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Employment Info Generator | Fake Person Generator" sap:VirtualizedContainerService.HintSize="522.4,666.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="046db1b4-1c09-4898-9c4e-001625db9ee8" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Employment Info Generator | Fake Person Generator" sap:VirtualizedContainerService.HintSize="528.8,666.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="046db1b4-1c09-4898-9c4e-001625db9ee8" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -144,7 +146,7 @@
         <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="398884bf3c40c0737e69d11708a64ca1.png" Selector="&lt;html app='chrome.exe' title='Employment Info Generator | Fake Person Generator'/&gt;" Url="https://www.fakepersongenerator.com/employment-generator?new=refresh" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="522.4,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="528.8,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -166,58 +168,59 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:BuildDataTable DataTable="[data_table]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="522.4,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Title&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Schedule&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Qualifications&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Responsibilities&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Experience&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Compensation&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Benefits&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Employment_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Seniority_Level&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Pay_Range&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Requirements&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Extract_Data_Linkedin workflow" sap:VirtualizedContainerService.HintSize="522.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Extract_Data_Linkedin.xaml">
+    <ui:BuildDataTable DataTable="[data_table]" DisplayName="Employee Data Table" sap:VirtualizedContainerService.HintSize="528.8,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Title&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Schedule&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Qualifications&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Responsibilities&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Experience&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Compensation&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Benefits&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Employment_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Seniority_Level&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Pay_Range&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Requirements&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Extract_Data_Linkedin workflow" sap:VirtualizedContainerService.HintSize="528.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Extract_Data_Linkedin.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="occupation">[occupation]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="address">[address]</InArgument>
         <InOutArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InOutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="522.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Extract_Data_Indeed.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="528.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Extract_Data_Indeed.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="occupation">[occupation]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="address">[address]</InArgument>
         <InOutArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InOutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="522.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Extract_Data_Glassdoor.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="528.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Extract_Data_Glassdoor.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="occupation">[occupation]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="address">[address]</InArgument>
         <InOutArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InOutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="522.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Extract_Data_Monster.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="528.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Extract_Data_Monster.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="occupation">[occupation]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="address">[address]</InArgument>
         <InOutArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InOutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="522.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Extract_Data_SimplyHired.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="528.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Extract_Data_SimplyHired.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="occupation">[occupation]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="address">[address]</InArgument>
         <InArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="522.4,916" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="528.8,1428.8" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
       <ui:IfElseIf.ConditionBlocks>
         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
           <ui:IfElseIfBlock BlockType="If" Condition="[data_table.Rows.Count &gt; 0]">
             <ui:IfElseIfBlock.Then>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="472,720.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="478.4,1233.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="file_name" />
                   <Variable x:TypeArguments="s:String[]" Name="files_data" />
+                  <Variable x:TypeArguments="x:String" Name="email" />
                 </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="436.8,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                   <ui:MultipleAssign.AssignOperations>
                     <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -239,34 +242,54 @@
                     </scg:List>
                   </ui:MultipleAssign.AssignOperations>
                 </ui:MultipleAssign>
-                <ui:WriteRange AddHeaders="True" DataTable="[data_table]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="430.4,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="[file_name]" />
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="430.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Data_Filtering.xaml">
+                <ui:WriteRange AddHeaders="True" DataTable="[data_table]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="436.8,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A1" WorkbookPath="[file_name]" />
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="436.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Data_Filtering.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="sd:DataTable" x:Key="data_table">[data_table]</InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="file_name">[file_name]</InArgument>
                     <InOutArgument x:TypeArguments="s:String[]" x:Key="files_data">[files_data]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
-                <ui:SendMail Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" AttachmentsCollection="[files_data]" DisplayName="Send SMTP Mail Message" EnableSSL="True" sap:VirtualizedContainerService.HintSize="430.4,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Port="587" SecureConnection="Auto" Server="smtp.office365.com" Subject="Job Data">
-                  <ui:SendMail.Email>
-                    <InArgument x:TypeArguments="x:String">
-                      <Literal x:TypeArguments="x:String" Value="" />
-                    </InArgument>
-                  </ui:SendMail.Email>
-                  <ui:SendMail.Files>
-                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
-                  </ui:SendMail.Files>
-                  <ui:SendMail.Password>
-                    <InArgument x:TypeArguments="x:String">
-                      <Literal x:TypeArguments="x:String" Value="" />
-                    </InArgument>
-                  </ui:SendMail.Password>
-                  <ui:SendMail.To>
-                    <InArgument x:TypeArguments="x:String">
-                      <Literal x:TypeArguments="x:String" Value="" />
-                    </InArgument>
-                  </ui:SendMail.To>
-                </ui:SendMail>
+                <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="436.8,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please enter your email" Title="Email Address">
+                  <ui:InputDialog.Result>
+                    <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+                  </ui:InputDialog.Result>
+                </ui:InputDialog>
+                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,377.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                  <TryCatch.Try>
+                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" AttachmentsCollection="[files_data]" Body="[&quot;Dear User,&quot; + vbCrLf + &#xD;&#xA;&quot;The data that you requested with regards to the occupation &quot; + occupation + &quot; is attached with this mail.&quot; + vbCrLf + &#xD;&#xA;&quot;Have a great day!&quot; + vbCrLf + &#xD;&#xA;&quot;Warm Regards&quot;]" DisplayName="Send SMTP Mail Message" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Port="587" SecureConnection="Auto" Server="smtp.office365.com" Subject="Job Data" To="[email.Trim]">
+                      <ui:SendMail.Email>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </ui:SendMail.Email>
+                      <ui:SendMail.Files>
+                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
+                      </ui:SendMail.Files>
+                      <ui:SendMail.Password>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </ui:SendMail.Password>
+                    </ui:SendMail>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="s:Exception">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        </ActivityAction.Argument>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Error Message" sap:VirtualizedContainerService.HintSize="333.6,76" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Given input was not a proper email.&quot;]" />
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
               </Sequence>
             </ui:IfElseIfBlock.Then>
           </ui:IfElseIfBlock>
