@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1130.4,3916</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>909.6,3916</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Data_Filtering_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -95,7 +95,7 @@
         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
           <ui:IfElseIfBlock BlockType="If" Condition="[user_choice = &quot;Yes&quot;]">
             <ui:IfElseIfBlock.Then>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="828,3228" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="644,3228" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="s:String[]" Name="header" />
                   <Variable x:TypeArguments="x:String" Name="filter_choice" />
@@ -105,7 +105,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="786.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign sap:VirtualizedContainerService.HintSize="602.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                   <Assign.To>
                     <OutArgument x:TypeArguments="s:String[]">[header]</OutArgument>
                   </Assign.To>
@@ -113,7 +113,7 @@
                     <InArgument x:TypeArguments="s:String[]">[data_table.Columns.Cast(Of DataColumn)().[Select](Function(x) x.ColumnName).ToArray()]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:InterruptibleDoWhile Condition="[user_choice = &quot;Yes&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="786.4,2491.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                <ui:InterruptibleDoWhile Condition="[user_choice = &quot;Yes&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="602.4,2491.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                   <ui:InterruptibleDoWhile.Body>
                     <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="567.2,2324" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <Sequence.Variables>
@@ -155,7 +155,7 @@
                           <OutArgument x:TypeArguments="x:String">[filter_choice]</OutArgument>
                         </ui:InputDialog.Result>
                       </ui:InputDialog>
-                      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="525.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter the filtering value" Title="[String.Format(&quot;Filter by: {0}&quot;, filter_choice)]">
+                      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="525.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter the filtering keyword" Title="[String.Format(&quot;Filter by: {0}&quot;, filter_choice)]">
                         <ui:InputDialog.Result>
                           <OutArgument x:TypeArguments="x:String">[filter_data]</OutArgument>
                         </ui:InputDialog.Result>
@@ -175,7 +175,7 @@
                               <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,348" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                                 <ui:IfElseIf.ConditionBlocks>
                                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                                    <ui:IfElseIfBlock BlockType="If" Condition="[Not row(filter_choice).ToString.Trim.ToLower.Contains(filter_data.Trim.ToLower)]">
+                                    <ui:IfElseIfBlock BlockType="If" Condition="[Not row(filter_choice).ToString.Trim.ToLower.Contains(filter_data.split(&quot; &quot;c)(0).Trim.ToLower)]">
                                       <ui:IfElseIfBlock.Then>
                                         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,152.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -234,7 +234,7 @@
                     </Sequence>
                   </ui:InterruptibleDoWhile.Body>
                 </ui:InterruptibleDoWhile>
-                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="786.4,504" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="602.4,504" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
                   <ui:IfElseIf.ConditionBlocks>
                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                       <ui:IfElseIfBlock BlockType="If" Condition="[data_table.RowCount &gt; 0]">

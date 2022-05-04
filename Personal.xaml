@@ -85,7 +85,6 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Personal" sap:VirtualizedContainerService.HintSize="570.4,3268" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -257,20 +256,10 @@
                 </ui:InputDialog>
                 <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,377.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                   <TryCatch.Try>
-                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" AttachmentsCollection="[files_data]" Body="[&quot;Dear User,&quot; + vbCrLf + &#xD;&#xA;&quot;The data that you requested with regards to the occupation &quot; + occupation + &quot; is attached with this mail.&quot; + vbCrLf + &#xD;&#xA;&quot;Have a great day!&quot; + vbCrLf + &#xD;&#xA;&quot;Warm Regards&quot;]" DisplayName="Send SMTP Mail Message" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Port="587" SecureConnection="Auto" Server="smtp.office365.com" Subject="Job Data" To="[email.Trim]">
-                      <ui:SendMail.Email>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </ui:SendMail.Email>
+                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" Email="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" AttachmentsCollection="[files_data]" Body="[&quot;Dear User,&quot; + vbCrLf + &#xA;&quot;The data that you requested with regards to the occupation &quot; + occupation + &quot; is attached with this mail.&quot; + vbCrLf + &#xA;&quot;Have a great day!&quot; + vbCrLf + &#xA;&quot;Warm Regards&quot;]" DisplayName="Send SMTP Mail Message" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Port="587" SecureConnection="Auto" Server="smtp.office365.com" Subject="Job Data" To="[email.Trim]">
                       <ui:SendMail.Files>
                         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
                       </ui:SendMail.Files>
-                      <ui:SendMail.Password>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </ui:SendMail.Password>
                     </ui:SendMail>
                   </TryCatch.Try>
                   <TryCatch.Catches>
